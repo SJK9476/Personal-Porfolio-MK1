@@ -1,4 +1,5 @@
 import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
+import { featuredProjects } from "./assets/featuredData.js";
 
 function newDateTime() {
   const currentDate = dayjs().format("dddd,<br> D/MM/YYYY");
@@ -25,3 +26,5 @@ menuBars.addEventListener("click", () => {
     dropdown.classList.add("hidden");
   }
 });
+
+console.log(featuredProjects);

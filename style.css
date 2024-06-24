@@ -187,9 +187,14 @@ h1 {
   font-size: 5rem;
 }
 
-h6 {
+h5 {
   color: #32a7ee;
   font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .profile-image {
@@ -317,9 +322,10 @@ h6 {
   display: grid;
   grid-template-columns: 2fr 5fr;
   padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-.about-section h6 {
+.about-section h5 {
   font-size: 2rem;
 }
  .about-section p {
@@ -354,3 +360,53 @@ h6 {
   border-color: var(--secondary-accent);
  }
  
+ /*featured section */
+
+ .featured-work-section {
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+ }
+
+.featured {
+  font-size: 2rem;
+}
+
+.featured-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  text-wrap: balance;
+  margin-top: 4rem;
+}
+
+.featured-project h6 {
+  color: var(--secondary-accent);
+  font-size: 1.25rem;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
+.featured-project img {
+  height: 406px;
+  width: 1fr;
+  object-fit: contain;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.view-project-button {
+  border: solid 1px white;
+  padding: .5rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.view-project-button:hover {
+  background-color: var(--main-accent);
+  border: solid 1px var(--main-accent);
+  transition: 0.25s;
+}
