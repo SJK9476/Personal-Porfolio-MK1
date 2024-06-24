@@ -245,20 +245,20 @@ a {
   transition: 0.25s;
 }
 
-.right-stack ul {
+.social-links {
   display: flex;
   list-style-type: none;
 }
 
-.right-stack li {
+.social-links li {
   margin-right: 1.5rem;
 }
 
-.right-stack a {
+.social-links a {
   text-decoration: none;
 }
 
-.right-stack a:hover {
+.social-links a:hover {
   color: #32a7ee;
   transition: .25s;
     & .fa-solid {
@@ -330,7 +330,7 @@ a {
 }
  .about-section p {
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
  }
 
  .about-section-buttons {
@@ -409,4 +409,29 @@ a {
   background-color: var(--main-accent);
   border: solid 1px var(--main-accent);
   transition: 0.25s;
+}
+
+/*contact section*/
+
+.contact-me {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 2rem;
+}
+
+.contact-me h5 {
+  font-size: 2rem;
+}
+
+.contact-details {
+  margin-top: 3.75rem;
+}
+
+.callout {
+  font-size: 1.125rem;
+}
+
+.email {
+  font-size: 3.5rem;
+  margin-top: 1rem;
 }
