@@ -87,6 +87,7 @@ textarea:not([rows]) {
     background-color: var(--background-clr);
     color: white;
     font-family: 'Nunito-Sans', sans-serif;
+    text-wrap: pretty;
 }
 
 .wrapper {
@@ -198,8 +199,9 @@ a {
 }
 
 .profile-image {
-  width: 50%;
+  width: 50vw;
   border-radius: 20px;
+  background-color: transparent;
 }
 
 .left-stack p {
@@ -416,7 +418,9 @@ a {
 .contact-me {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  gap: 2rem;
   margin: 2rem;
+  width: 1fr;
 }
 
 .contact-me h5 {
@@ -424,7 +428,11 @@ a {
 }
 
 .contact-details {
+  display: flex;
   margin-top: 3.75rem;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .callout {
@@ -432,6 +440,6 @@ a {
 }
 
 .email {
-  font-size: 3.5rem;
+  font-size: 4vw;
   margin-top: 1rem;
 }
